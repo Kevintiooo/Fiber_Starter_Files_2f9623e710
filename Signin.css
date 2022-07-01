@@ -1,0 +1,205 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:ital,wght@0,100;1,300&family=Zen+Kaku+Gothic+Antique&display=swap);
+
+.error {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    opacity: 75%;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    background-color: grey;
+}
+
+body {
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+:root {
+    --color: #571CDD;
+}
+
+.container1 {
+    flex: 1;
+}
+
+.container2 {
+    background: var(--color);
+}
+
+.template {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: translateY(160px);
+}
+
+img {
+    width: 450px;
+    margin-bottom: 20px;
+}
+
+.container2 p {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+form p a {
+    color: var(--color);
+    text-decoration: none;
+}
+
+.container1 h1 {
+    margin-left: 100px;
+    margin-top: 25px;
+    font-size: 37px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+input {
+    margin-bottom: 30px;
+    padding: 15px;
+    width: 75%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(189, 185, 185);
+}
+
+label {
+    font-size: 15px;
+}
+
+.container1 img {
+    margin-left: 40px;
+    width: 30px;
+    line-height: 0rem;
+    transform: translate3d(465px, -70px, 0);
+}
+
+.pass {
+    cursor: pointer;
+}
+
+button {
+    width: 75%;
+    background: #571CDD;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    margin-left: 175px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+p {
+    font-size: 20px;
+}
+
+.container2 h1 {
+    text-align: center;
+}
+
+.container2 p {
+    font-size: 15px;
+}
+
+.scrollbtn {
+    display: flex;
+    margin-top: 10px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+    margin: 5px;
+}
+
+@media only screen and (max-width:500px) {
+
+    body {
+        width: 100%;
+    }
+
+    .container1 {
+        width: 90%;
+        margin: 1px auto;
+    }
+
+    .container2 {
+        display: none;
+    }
+
+    .container1 img {
+        transform: translate3d(400px, -65px, 0);
+    }
+
+    h3 {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .container1 h1 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+
+    input {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    form {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    footer p {
+        text-align: center;
+
+    }
+}
